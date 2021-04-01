@@ -1,3 +1,1 @@
-name = "Joshua"
-if name == "Joshua"
-    print("My name is Joshua")
+print((16 * 40) * 2)
