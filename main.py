@@ -45,3 +45,14 @@ family_size = len(family)
 average_age = age_sum / family_size
 
 print(average_age)
+
+# Tuple like a dictionary but non-mutable
+palette_one = ("#f1f1f1", "#333333", "#4287f5")
+palette_two = ("#f5f5f5", "#454545", "#6dd46a")
+palette_three = ("#f0fff0", "#c7c7c7", "#725fb0")
+palettes = (palette_one, palette_two, palette_three)
+
+color_codes = palettes
+
+temperature_data = {"morning": (3.1, 2.0, 4.9), "noon": (1.2, 0.9, 3.4), "evening": (0.2, 0.1, 1.0)}
+day_temperatures = temperature_data
