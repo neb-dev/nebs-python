@@ -43,14 +43,14 @@ print(last_names["Matt"])
 # Tuple to List
 tuple_data = (1, 2, 3)
 tuple_to_list = list(tuple_data)
-print(tuple_to_list)
+print(tuple_to_list, type(tuple_to_list))
 
 # List to Tuple
 list_data = [1.4, 2, 3.3]
 list_to_tuple = tuple(list_data)
-print(list_to_tuple)
+print(list_to_tuple, type(list_to_tuple))
 
 # List to Dictionary
 list_of_lists = [["Gregory", "Paladin"], ["Bekenar", "Cryptlord"]]
 list_to_dictionary = dict(list_of_lists)
-print(list_to_dictionary)
+print(list_to_dictionary, type(list_to_dictionary))
