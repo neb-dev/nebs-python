@@ -36,3 +36,21 @@ if x == 1 or y == 2:
     print("Yes OR")
 else:
     print("No OR")
+
+# IN
+def foo(x, array):
+    if x in array:
+        return True
+    else:
+        return False
+ 
+print(foo(1, [1, 2, 3]))
+print(foo(1, [2, 3]))
+print(foo(1, ['1', 2, 3]))
+
+# isinstance
+x = "1"
+if isinstance(x, int) or isinstance(x, float) or x == "1":
+    print("Valid type!")
+else:
+    print("Not valid!")
