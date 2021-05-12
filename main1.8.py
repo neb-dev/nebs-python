@@ -18,3 +18,13 @@ def sort_strings(*args):
     return sorted(strings)
 
 print(sort_strings("Hello", "Goodbye", "Tempalte", "Unique", "Zebra"))
+
+def mean(**kwargs):
+    return kwargs
+
+print(mean(a=1, b=2, c=3))
+
+def find_sum(**kwargs):
+    return sum(kwargs.values())
+    
+print(find_sum(a=9))
