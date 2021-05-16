@@ -5,7 +5,7 @@
 
 # txt_file.close()
 
-# with
+# with implicitly closes the file
 with open("fruits.txt") as txt_file:
     fruit = txt_file.read()
 
