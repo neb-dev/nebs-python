@@ -6,7 +6,7 @@
 # txt_file.close()
 
 # with implicitly closes the file
-with open("fruits.txt") as txt_file:
+with open("files/fruits.txt") as txt_file:
     fruit = txt_file.read()
 
 # display file contents
