@@ -34,3 +34,10 @@ def char_in_file(c, f):
         return res
 
 print(char_in_file("a", "files/bears.txt"))
+
+with open("files/bears.txt") as file:
+    # content = file.read(90)
+    content = file.read()
+
+with open("files/first.txt", "w") as file:
+    file.write(content[:90])
