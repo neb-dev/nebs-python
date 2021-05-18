@@ -50,3 +50,11 @@ with open("files/bears.txt") as file:
 
 with open("files/first.txt", "w") as file:
     file.write(content[:90])
+
+# append own content to file
+with open("data.txt", "a+") as file:
+    file.seek(0)
+    content = file.read()
+    file.seek(0)
+    file.write(content)
+    file.write(content)
