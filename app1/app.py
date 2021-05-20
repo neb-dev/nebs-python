@@ -1,6 +1,13 @@
 # import json
 # data = json.load(open("data.json")) - the result will be stored in a python dictionary data type
-# data["rain"]
+
+# import difflib
+# from difflib import SequenceMatcher
+# SequenceMatcher(None, "rainn", "rainn").ratio() - None is used in place of IsJunk parameter which requires a function
+# import get_close_matches
+# get_close_matches("rain", data.keys())[0]
+# - will return a list with three most similar words with cutoff similiary ratio default of 0.6,
+# [0] returns the first word in the list (having the greatest similarity ratio)
 import json
 
 data = json.load(open("app1/data.json"))
