@@ -6,7 +6,8 @@ import json
 data = json.load(open("app1/data.json"))
 
 def word_search(key):
-    if k in data:
+    key = key.lower()
+    if key in data:
         return data[key]
     else:
         return "word not found"
