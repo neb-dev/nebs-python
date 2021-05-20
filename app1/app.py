@@ -6,7 +6,10 @@ import json
 data = json.load(open("app1/data.json"))
 
 def word_search(key):
-    return data[key]
+    if k in data:
+        return data[key]
+    else:
+        return "word not found"
 
 input_word = input("enter a word: ")
 
