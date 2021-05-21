@@ -30,4 +30,10 @@ def word_search(key):
 
 input_word = input("enter a word: ")
 
-print(word_search(input_word))
+result = word_search(input_word)
+
+if isinstance(result, list):
+    for definition in result:
+        print(definition)
+else:
+    print(result)
