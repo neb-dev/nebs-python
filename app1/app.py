@@ -9,6 +9,7 @@
 # - will return a list with three most similar words with cutoff similiary ratio default of 0.6,
 # [0] returns the first word in the list (having the greatest similarity ratio)
 import json
+from difflib import get_close_matches
 
 data = json.load(open("app1/data.json"))
 
@@ -16,6 +17,8 @@ def word_search(key):
     key = key.lower()
     if key in data:
         return data[key]
+    elif len(get_close_matches(key, data.keys())) > 0:
+        return "did you mean %s?" % get_close_matches(key, data.keys())[0]
     else:
         return "word not found"
 
