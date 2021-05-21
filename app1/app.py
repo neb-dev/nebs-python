@@ -18,7 +18,13 @@ def word_search(key):
     if key in data:
         return data[key]
     elif len(get_close_matches(key, data.keys())) > 0:
-        return "did you mean %s?" % get_close_matches(key, data.keys())[0]
+        is_word = input("did you mean %s? y or n: " % get_close_matches(key, data.keys())[0])
+        if is_word == "y":
+            return data[get_close_matches(key, data.keys())[0]]
+        elif is_word == "n":
+            return "word not found"
+        else:
+            return "input not valid"    
     else:
         return "word not found"
 
