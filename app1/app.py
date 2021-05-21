@@ -14,13 +14,15 @@ from difflib import get_close_matches
 data = json.load(open("app1/data.json"))
 
 def word_search(key):
-    key = key.lower()
-    if key in data:
-        return data[key]
-    elif len(get_close_matches(key, data.keys())) > 0:
-        is_word = input("did you mean %s? y or n: " % get_close_matches(key, data.keys())[0])
+    word = key.lower()
+    if word in data:
+        return data[word]
+    elif word.title() in data:
+        return data[word.title()]
+    elif len(get_close_matches(word, data.keys())) > 0:
+        is_word = input("did you mean %s? y or n: " % get_close_matches(word, data.keys())[0])
         if is_word == "y":
-            return data[get_close_matches(key, data.keys())[0]]
+            return data[get_close_matches(word, data.keys())[0]]
         elif is_word == "n":
             return "word not found"
         else:
