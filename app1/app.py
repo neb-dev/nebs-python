@@ -19,6 +19,8 @@ def word_search(key):
         return data[word]
     elif word.title() in data:
         return data[word.title()]
+    elif word.upper() in data:
+        return data[word.upper()]
     elif len(get_close_matches(word, data.keys())) > 0:
         is_word = input("did you mean %s? y or n: " % get_close_matches(word, data.keys())[0])
         if is_word == "y":
