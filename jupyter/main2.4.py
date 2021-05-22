@@ -4,3 +4,6 @@
 # import pandas
 # df=pandas.read_csv(path to local csv file)
 # df
+
+# import os
+# os.listdir() - shows files in directory
