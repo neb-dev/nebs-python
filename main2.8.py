@@ -35,4 +35,11 @@
 #     print(el) - prints each element 1x1
 
 
+# stacking numpy arrays
+# hstacked = numpy.hstack((grayscale_img,grayscale_img)) - pass Tuple of two numpy arrays to stack horizontally (3x10)
+# vstacked = numpy.vstack((grayscale_img,grayscale_img)) - stack vertically 6x5
 
+# splitting numpy arrays
+# horizontalsplit = numpy.hsplit(hstacked, 5) - hstacked (3x10) will produce five arrays (3x2, 3x2, 3x2, 3x2, 3x2)
+# verticalsplit = numpy.vsplit(vstacked, 3) - vstacked (6x5) wll produce three arrays (2x5, 2x5, 2x5)
+# splitting a numpy array will produce a regular python List meaning you can verticalsplit[0] to return the first 2x5 list element
